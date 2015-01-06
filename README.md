@@ -1,2 +1,2 @@
-BuddyPress-shift-enter
+BuddyPress Keyboard Shortcuts
 ======================

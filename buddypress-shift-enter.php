@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: BuddyPress Keyboard Shortcuts
- * Description: Use Shift+Enter when you finish writing activity in BuddyPress and watch it be published!
+ * Description: Use the provided keyboard shortcuts when you finish writing activity in BuddyPress and watch it be published!
  * Author: Nikhil Vimal
  * Author URI: http://nik.techvoltz.com
  * Version: 1.0
