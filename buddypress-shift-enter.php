@@ -14,7 +14,7 @@ if ( ! defined( 'WPINC' ) ) {
 	die;
 }
 
-function buddypress_activity_with_shift_enter_enqueue() {
+function buddypress_keyboard_shortcuts_enqueue() {
 
 	if (  bp_is_activity_component()) {
 
@@ -27,7 +27,4 @@ function buddypress_activity_with_shift_enter_enqueue() {
 
 
 }
-add_action('wp_enqueue_scripts','buddypress_activity_with_shift_enter_enqueue');
-
-
-
+add_action('wp_enqueue_scripts','buddypress_keyboard_shortcuts_enqueue');
