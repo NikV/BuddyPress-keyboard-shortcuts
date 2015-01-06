@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name: BuddyPress Shift+Enter to Publish activity
+ * Plugin Name: BuddyPress Keyboard Shortcuts
  * Description: Use Shift+Enter when you finish writing activity in BuddyPress and watch it be published!
  * Author: Nikhil Vimal
  * Author URI: http://nik.techvoltz.com
@@ -9,6 +9,10 @@
  * License: GNU GPLv2+
  */
 
+// If this file is called directly, abort.
+if ( ! defined( 'WPINC' ) ) {
+	die;
+}
 
 function buddypress_activity_with_shift_enter_enqueue() {
 
