@@ -1,20 +1,17 @@
 /*
  * The JS file to make sure the keyboard shortcut works.
  */
-jQuery(document).ready(function ($) {
+window.addEventListener = function () {
+    if (document.getElementById("whats-new")) {
+        document.getElementById("whats-new").onkeydown = function (submit) {
 
-    'use strict';
-
-    if (window.addEventListener) {
-        window.addEventListener("keydown", function (submit_activity) {
-            if (submit_activity.keyCode === 13 && submit_activity.shiftKey) {
-
-                if ($('#whats-new')) {
-                    document.getElementById('aw-whats-new-submit').click();
-                }
-
-
+            if (submit.keyCode == 13 && submit.metaKey) {
+                document.getElementById("aw-whats-new-submit").click();
             }
-        });
+
+            else if (submit.keyCode == 13 && submit.ctrlKey) {
+                document.getElementById("aw-whats-new-submit").click();
+            }
+        }
     }
-});
+}
